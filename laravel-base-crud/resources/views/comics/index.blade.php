@@ -6,9 +6,9 @@
   <li>
     <img src="{{ $value->thumb }}" alt=""> <br>
     {{ $value->title }} <br>
-    {{ $value->description }} <br>
     {{ $value->price }} <br>
-    {{ $value->series }} <br> <br>
+    {{ $value->series }} <br>
+    <button><a href="{{ route('comics.show', $value->id) }}">Visualizza</a></button> <br><br>
   </li>
   @endforeach
 </ul>
