@@ -16,6 +16,9 @@
         <li>
           <a href="{{ route('comics.index') }}">HOME</a>
         </li>
+        <li>
+          <a href="{{ route('comics.create') }}">CREA</a>
+        </li>
       </ul>
     </nav>
   </header>
