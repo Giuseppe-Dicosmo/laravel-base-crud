@@ -5,6 +5,8 @@
   <h1>nuovo fumetto</h1>
 
   <form action="{{ route('comics.store') }}" method="POST">
+    @csrf
+
     <label for="immagine">Immagine:</label><br>
     <input type="text" id="immagine" name="thumb" placeholder="Inserisci un url"><br>
 
@@ -17,6 +19,9 @@
       <option value="comic_book">Comic Book</option>
       <option value="graphic_novel">Graphic Novel</option>
     </select> <br>
+
+    <label for="serie">Serie:</label><br>
+    <input type="text" id="serie" name="series" placeholder="inserisci la serie"><br>
 
     <label for="descrizione">Descrizione:</label><br>
     <textarea name="description" id="descrizione" cols="30" rows="10"></textarea><br>
